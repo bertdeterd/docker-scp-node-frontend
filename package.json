@@ -15,5 +15,17 @@
   "bugs": {
     "url": "https://github.com/bertdeterd/docker-scp-node-frontend/issues"
   },
-  "homepage": "https://github.com/bertdeterd/docker-scp-node-frontend#readme"
+  "homepage": "https://github.com/bertdeterd/docker-scp-node-frontend#readme",
+  "dependencies": {
+    "vue": "^2.5.22",
+    "axios": "*",
+    "express": "*",
+    "nprogress": "*",
+    "oauth": "*",
+    "passport": "*",
+    "path": "*",
+    "request": "*",
+    "vuetify": "*",
+    "vuex": "^3.0.1"
+  }
 }
