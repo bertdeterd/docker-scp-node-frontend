@@ -6,10 +6,11 @@ const app = express();
 
 app.use('/uaa',uaaroutes);
 
+console.log( path.join(__dirname, 'dist') );
 app.use('/', express.static( path.join(__dirname, 'dist') ));
 
 
 const port = process.env.PORT || 3000;
 app.listen(port, function () {
-  console.log('myapp listening on port ' + port);
+  console.log('myfrontend-app listening on port ' + port);
 });

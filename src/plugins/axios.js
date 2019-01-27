@@ -5,9 +5,9 @@ import 'nprogress/nprogress.css'
 
 // create a new axios instance
 const axios = Axios.create({
-  baseURL: '/apper/'
+  baseURL: '/'
 })
-
+/*
 // before a request is made start the nprogress
 axios.interceptors.request.use(config => {
   NProgress.start()
@@ -19,5 +19,5 @@ axios.interceptors.response.use(response => {
   NProgress.done()
   return response
 })
-
+*/
 export default axios
