@@ -22,6 +22,18 @@ export default {
   components: {
     Main
   },
+
+    data: function() {
+    return {
+      userinfo: {}
+    };
+  },
+
+  async created() {
+    let response = await this.$http.get("/uaa/userinfo");
+    this.userinfo = response.data;
+  },
+
    methods: {
     logout: function(event) {
       //this.$http.get('/logout')
