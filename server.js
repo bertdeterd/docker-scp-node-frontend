@@ -12,5 +12,5 @@ app.use('/', express.static( path.join(__dirname, 'dist') ));
 
 const port = process.env.PORT || 3000;
 app.listen(port, function () {
-  console.log('myfrontend-app listening on port ' + port);
+  console.log('myxrontend-app listening on port ' + port);
 });
