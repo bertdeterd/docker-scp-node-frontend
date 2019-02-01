@@ -2,11 +2,14 @@ version: '3'
 
 services:
   web:
-    image: "bertdeterd/scp-node-frontend"
+    build: 
+     context: .
     ports:
-     - "80:80"
+     - "5100:80"
+    volumes:
+     - ./dist
   
   userservice:
     image: "bertdeterd/scp-node-xsuaa"
     ports:
-     - "8080:8080"
+     - "8080:80"
